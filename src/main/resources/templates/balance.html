@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Welcome To Spring Boot Bank </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h1>Please Enter Account Number</h1>
+    <form action="#" th:action="@{/balance}" th:object="${user}" method="post" >
+    	<p>Account Number: <input type="text" th:field="*{accountNumber}" name="account"/></p>
+    	<p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+    </form>
+</body>
+</html>
